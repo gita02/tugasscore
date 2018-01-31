@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.bso.inf.tugasscore.DetailPersibActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/logopersib"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/persib"
+            />
+        <TextView
+            android:textSize="17dp"
+            android:textColor="@color/Putih"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Nama lengkap	Persatuan Sepak Bola
+Indonesia Bandung
+Julukan	Maung Bandung
+Pangeran Biru
+Usab Perning
+Didirikan	14 Maret 1933 (84 tahun lalu)
+Stadion	Stadion Gelora Bandung Lautan Api
+Bandung, Indonesia
+(Kapasitas: 38.000 personal seat)
+Direktur Utama	Bendera Indonesia Glenn Sugita
+Manajer	Bendera Indonesia Umuh Muchtar
+Pelatih	Bendera Argentina Roberto Carlos Mario Gómez"
+            android:layout_below="@id/logopersib"
+            />
+
+        <Button
+            android:id="@+id/sumberpersib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sumber"
+            />
+    </RelativeLayout>
+</LinearLayout>

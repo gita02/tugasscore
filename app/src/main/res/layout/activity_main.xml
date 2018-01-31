@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:orientation="vertical"
+    tools:context="com.bso.inf.tugasscore.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/persib"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="PERSIB BANDUNG"
+            android:textColor="@color/Putih"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnpersib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/persib"
+            android:layout_centerInParent="true"
+            android:text="detail" />
+
+        <TextView
+            android:id="@+id/vs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btnpersib"
+            android:gravity="center"
+            android:text="VS"
+            android:textColor="@color/Merah"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/persija"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/vs"
+            android:gravity="center"
+            android:text="PERSIJA JAKARTA"
+            android:textColor="@color/Putih"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnpersija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persija"
+            android:layout_centerInParent="true"
+            android:text="detail" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnpersija">
+
+            <TextView
+                android:id="@+id/scorepersib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="0.33"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/Putih"
+                android:textSize="50sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:gravity="center_horizontal"
+                android:text="-"
+                android:textColor="@color/Putih"
+                android:textSize="50sp"
+
+                />
+
+            <TextView
+                android:id="@+id/scorepersija"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@color/Putih"
+                android:textSize="50sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/tambahpersib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/biru"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/kurangpersib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tambahpersib"
+            android:layout_weight="0.33"
+            android:background="@color/biru"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/tambahpersija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/kurangpersija"
+            android:background="@color/oranye"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/kurangpersija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/oranye"
+            android:text="-" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/kuning"
+            android:text="reset" />
+
+        <Button
+            android:id="@+id/berita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reset"
+            android:text="berita" />
+        <Button
+
+            android:id="@+id/peta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/berita"
+            android:text="peta" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
